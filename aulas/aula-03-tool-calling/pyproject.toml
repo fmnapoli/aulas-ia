@@ -1,0 +1,15 @@
+[project]
+name = "aula-03-tool-calling"
+version = "0.1.0"
+description = "Aula 03: Tool Calling — Agente com ferramentas externas"
+requires-python = ">=3.11"
+dependencies = [
+    "agno",
+    "google-genai",
+    "python-dotenv",
+    "duckduckgo-search",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.backends"

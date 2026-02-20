@@ -3,11 +3,10 @@ name = "aulas-ia"
 version = "0.1.0"
 description = "Curso Prático de Desenvolvimento de Agentes de IA com Agno + Gemini"
 requires-python = ">=3.11"
-dependencies = [
-    "agno",
-    "google-genai",
-    "python-dotenv",
-]
+dependencies = []
+
+[tool.uv.workspace]
+members = ["aulas/*"]
 
 [tool.ruff]
 line-length = 100

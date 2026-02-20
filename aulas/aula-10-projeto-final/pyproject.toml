@@ -1,0 +1,17 @@
+[project]
+name = "aula-10-projeto-final"
+version = "0.1.0"
+description = "Aula 10: Projeto Final — Assistente de pesquisa com Team"
+requires-python = ">=3.11"
+dependencies = [
+    "agno",
+    "google-genai",
+    "python-dotenv",
+    "duckduckgo-search",
+    "lancedb",
+    "tantivy",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.backends"

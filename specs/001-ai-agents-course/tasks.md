@@ -30,17 +30,17 @@
 
 **CRITICAL**: No lesson can be properly used until this phase is complete
 
-- [ ] T005 Create root README.md in Portuguese with: course overview, module/lesson table, prerequisites (Python 3.11+, uv, Gemini API key), quickstart instructions, and link to each lesson
-- [ ] T006 Create pyproject.toml in aulas/aula-01-hello-agent/ with dependencies: agno, google-genai, python-dotenv
-- [ ] T007 [P] Create pyproject.toml in aulas/aula-02-prompt-engineering/ with dependencies: agno, google-genai, python-dotenv
-- [ ] T008 [P] Create pyproject.toml in aulas/aula-03-tool-calling/ with dependencies: agno, google-genai, python-dotenv, duckduckgo-search
-- [ ] T009 [P] Create pyproject.toml in aulas/aula-04-react-agent/ with dependencies: agno, google-genai, python-dotenv, duckduckgo-search
-- [ ] T010 [P] Create pyproject.toml in aulas/aula-05-memory/ with dependencies: agno, google-genai, python-dotenv
-- [ ] T011 [P] Create pyproject.toml in aulas/aula-06-knowledge-rag/ with dependencies: agno, google-genai, python-dotenv, lancedb, tantivy
-- [ ] T012 [P] Create pyproject.toml in aulas/aula-07-planning/ with dependencies: agno, google-genai, python-dotenv, duckduckgo-search
-- [ ] T013 [P] Create pyproject.toml in aulas/aula-08-multi-agent-team/ with dependencies: agno, google-genai, python-dotenv, duckduckgo-search
-- [ ] T014 [P] Create pyproject.toml in aulas/aula-09-guardrails/ with dependencies: agno, google-genai, python-dotenv
-- [ ] T015 [P] Create pyproject.toml in aulas/aula-10-projeto-final/ with dependencies: agno, google-genai, python-dotenv, duckduckgo-search, lancedb, tantivy
+- [x] T005 Create root README.md in Portuguese with: course overview, module/lesson table, prerequisites (Python 3.11+, uv, Gemini API key), quickstart instructions, and link to each lesson
+- [x] T006 Create pyproject.toml in aulas/aula-01-hello-agent/ with dependencies: agno, google-genai, python-dotenv
+- [x] T007 [P] Create pyproject.toml in aulas/aula-02-prompt-engineering/ with dependencies: agno, google-genai, python-dotenv
+- [x] T008 [P] Create pyproject.toml in aulas/aula-03-tool-calling/ with dependencies: agno, google-genai, python-dotenv, duckduckgo-search
+- [x] T009 [P] Create pyproject.toml in aulas/aula-04-react-agent/ with dependencies: agno, google-genai, python-dotenv, duckduckgo-search
+- [x] T010 [P] Create pyproject.toml in aulas/aula-05-memory/ with dependencies: agno, google-genai, python-dotenv
+- [x] T011 [P] Create pyproject.toml in aulas/aula-06-knowledge-rag/ with dependencies: agno, google-genai, python-dotenv, lancedb, tantivy
+- [x] T012 [P] Create pyproject.toml in aulas/aula-07-planning/ with dependencies: agno, google-genai, python-dotenv, duckduckgo-search
+- [x] T013 [P] Create pyproject.toml in aulas/aula-08-multi-agent-team/ with dependencies: agno, google-genai, python-dotenv, duckduckgo-search
+- [x] T014 [P] Create pyproject.toml in aulas/aula-09-guardrails/ with dependencies: agno, google-genai, python-dotenv
+- [x] T015 [P] Create pyproject.toml in aulas/aula-10-projeto-final/ with dependencies: agno, google-genai, python-dotenv, duckduckgo-search, lancedb, tantivy
 
 **Checkpoint**: Project skeleton ready — lesson implementation can begin
 

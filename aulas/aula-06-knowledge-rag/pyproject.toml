@@ -1,0 +1,16 @@
+[project]
+name = "aula-06-knowledge-rag"
+version = "0.1.0"
+description = "Aula 06: Knowledge + RAG — Agente que consulta base de conhecimento"
+requires-python = ">=3.11"
+dependencies = [
+    "agno",
+    "google-genai",
+    "python-dotenv",
+    "lancedb",
+    "tantivy",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.backends"

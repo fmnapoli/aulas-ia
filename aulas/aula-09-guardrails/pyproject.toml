@@ -1,0 +1,14 @@
+[project]
+name = "aula-09-guardrails"
+version = "0.1.0"
+description = "Aula 09: Guardrails — Validação de inputs e outputs"
+requires-python = ">=3.11"
+dependencies = [
+    "agno",
+    "google-genai",
+    "python-dotenv",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.backends"

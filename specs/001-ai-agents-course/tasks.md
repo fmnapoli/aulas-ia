@@ -54,15 +54,15 @@
 
 ### Aula 01: Olá, Agente!
 
-- [ ] T016 [US1] Write main.py in aulas/aula-01-hello-agent/main.py — basic Agent with Gemini(id="gemini-2.0-flash"), dotenv for GOOGLE_API_KEY loading, print_response with stream=True, markdown=True (~30 lines)
-- [ ] T017 [US1] Write README.md in aulas/aula-01-hello-agent/README.md following lesson contract template: objective (primeiro agente), concepts (Agent, Gemini, print_response), theory (o que é um LLM, o que é um agente, como funciona uma API), practice (step-by-step main.py walkthrough), troubleshooting (top 5 errors), challenge (mudar o prompt e observar diferenças)
-- [ ] T018 [US1] Create concept diagram in aulas/aula-01-hello-agent/assets/diagram.md — text-based diagram (Mermaid or ASCII) showing: User → Agent → LLM API → Response flow
+- [x] T016 [US1] Write main.py in aulas/aula-01-hello-agent/main.py — basic Agent with Gemini(id="gemini-2.0-flash"), dotenv for GOOGLE_API_KEY loading, print_response with stream=True, markdown=True (~30 lines)
+- [x] T017 [US1] Write README.md in aulas/aula-01-hello-agent/README.md following lesson contract template: objective (primeiro agente), concepts (Agent, Gemini, print_response), theory (o que é um LLM, o que é um agente, como funciona uma API), practice (step-by-step main.py walkthrough), troubleshooting (top 5 errors), challenge (mudar o prompt e observar diferenças)
+- [x] T018 [US1] Create concept diagram in aulas/aula-01-hello-agent/assets/diagram.md — text-based diagram (Mermaid or ASCII) showing: User → Agent → LLM API → Response flow
 
 ### Aula 02: Prompt Engineering para Agentes
 
-- [ ] T019 [P] [US1] Write main.py in aulas/aula-02-prompt-engineering/main.py — Agent with instructions (system prompt), few-shot examples via instructions, Pydantic output_schema for structured output, demonstrate difference between with/without instructions (~60 lines)
-- [ ] T020 [P] [US1] Write README.md in aulas/aula-02-prompt-engineering/README.md — theory (system prompts, few-shot, structured output, Pydantic), concepts (instructions, output_schema, BaseModel, Field), practice, troubleshooting, challenge (criar seu próprio schema Pydantic)
-- [ ] T021 [P] [US1] Create concept diagram in aulas/aula-02-prompt-engineering/assets/diagram.md — text-based diagram showing: instructions → Agent → output_schema → Structured Response
+- [x] T019 [P] [US1] Write main.py in aulas/aula-02-prompt-engineering/main.py — Agent with instructions (system prompt), few-shot examples via instructions, Pydantic output_schema for structured output, demonstrate difference between with/without instructions (~60 lines)
+- [x] T020 [P] [US1] Write README.md in aulas/aula-02-prompt-engineering/README.md — theory (system prompts, few-shot, structured output, Pydantic), concepts (instructions, output_schema, BaseModel, Field), practice, troubleshooting, challenge (criar seu próprio schema Pydantic)
+- [x] T021 [P] [US1] Create concept diagram in aulas/aula-02-prompt-engineering/assets/diagram.md — text-based diagram showing: instructions → Agent → output_schema → Structured Response
 
 **Checkpoint**: MVP complete — 2 fully functional lessons proving the student experience works. Validate by running both lessons end-to-end.
 

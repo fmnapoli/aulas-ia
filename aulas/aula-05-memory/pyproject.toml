@@ -7,8 +7,6 @@ dependencies = [
     "agno",
     "google-genai",
     "python-dotenv",
+    "sqlalchemy",
 ]
 
-[build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.backends"

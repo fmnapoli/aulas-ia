@@ -11,6 +11,3 @@ dependencies = [
     "tantivy",
 ]
 
-[build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.backends"

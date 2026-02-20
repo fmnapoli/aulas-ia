@@ -7,9 +7,6 @@ dependencies = [
     "agno",
     "google-genai",
     "python-dotenv",
-    "duckduckgo-search",
+    "ddgs",
 ]
 
-[build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.backends"

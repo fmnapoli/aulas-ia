@@ -153,7 +153,7 @@
 - [x] T055 Validate all 10 lessons execute successfully: run `uv sync && uv run python main.py` in each aulas/aula-XX directory
 - [x] T056 [P] Review all README.md files for consistent formatting per lesson contract template in specs/001-ai-agents-course/contracts/lesson-contract.md
 - [x] T057 [P] Verify all pyproject.toml files have correct dependencies by checking imports in each main.py
-- [ ] T058 Run quickstart.md validation: follow specs/001-ai-agents-course/quickstart.md from scratch and verify complete flow works
+- [x] T058 Run quickstart.md validation: follow specs/001-ai-agents-course/quickstart.md from scratch and verify complete flow works
 
 ---
 

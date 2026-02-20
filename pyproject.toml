@@ -1,0 +1,20 @@
+[project]
+name = "aulas-ia"
+version = "0.1.0"
+description = "Curso Prático de Desenvolvimento de Agentes de IA com Agno + Gemini"
+requires-python = ">=3.11"
+dependencies = [
+    "agno",
+    "google-genai",
+    "python-dotenv",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

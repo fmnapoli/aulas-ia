@@ -1,0 +1,71 @@
+site_name: "Agentes de IA — Curso Prático"
+site_description: "Aprenda a construir agentes de IA do zero com Agno + Google Gemini"
+site_url: https://fmnapoli.github.io/aulas-ia/
+repo_url: https://github.com/fmnapoli/aulas-ia
+repo_name: fmnapoli/aulas-ia
+
+theme:
+  name: material
+  language: pt-BR
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Modo escuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Modo claro
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - content.code.copy
+    - search.highlight
+    - search.suggest
+  icon:
+    repo: fontawesome/brands/github
+
+nav:
+  - Início: index.md
+  - Aulas:
+      - "01 — Olá, Agente!": aulas/aula-01-hello-agent/README.md
+      - "02 — Prompt Engineering": aulas/aula-02-prompt-engineering/README.md
+      - "03 — Tool Calling": aulas/aula-03-tool-calling/README.md
+      - "04 — Agente ReAct": aulas/aula-04-react-agent/README.md
+      - "05 — Memory": aulas/aula-05-memory/README.md
+      - "06 — Knowledge + RAG": aulas/aula-06-knowledge-rag/README.md
+      - "07 — Planejamento": aulas/aula-07-planning/README.md
+      - "08 — Multi-Agent Team": aulas/aula-08-multi-agent-team/README.md
+      - "09 — Guardrails": aulas/aula-09-guardrails/README.md
+      - "10 — Projeto Final": aulas/aula-10-projeto-final/README.md
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true

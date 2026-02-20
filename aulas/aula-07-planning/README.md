@@ -13,8 +13,8 @@ Entender como um agente de IA planeja e decompõe tarefas complexas em subtarefa
 
 ## Pré-requisitos
 
-- [Aula 03: Tool Calling](../aula-03-tool-calling/) completada
-- [Aula 04: Agente ReAct](../aula-04-react-agent/) completada
+- [Aula 03: Tool Calling](../aula-03-tool-calling/README.md) completada
+- [Aula 04: Agente ReAct](../aula-04-react-agent/README.md) completada
 - `.env` com GOOGLE_API_KEY configurada
 
 ## Teoria
@@ -209,4 +209,4 @@ Com `show_full_reasoning=True`, você verá o "pensamento" do agente antes da re
 
 ## Próxima Aula
 
-[Aula 08: Multi-Agent Team](../aula-08-multi-agent-team/) — Aprenda a criar equipes de agentes especializados que colaboram para resolver problemas complexos.
+[Aula 08: Multi-Agent Team](../aula-08-multi-agent-team/README.md) — Aprenda a criar equipes de agentes especializados que colaboram para resolver problemas complexos.

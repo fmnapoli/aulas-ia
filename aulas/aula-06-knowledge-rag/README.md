@@ -16,7 +16,7 @@ Aprender a construir um agente que consulta documentos próprios usando Retrieva
 
 ## Pré-requisitos
 
-- [Aula 01: Olá, Agente!](../aula-01-hello-agent/) completada (conceito de Agent + Gemini)
+- [Aula 01: Olá, Agente!](../aula-01-hello-agent/README.md) completada (conceito de Agent + Gemini)
 - `.env` com GOOGLE_API_KEY configurada
 
 ## Teoria
@@ -197,4 +197,4 @@ knowledge.insert(path="docs/artigo.pdf", reader=PDFReader())
 
 ## Próxima Aula
 
-[Aula 07: Planning](../aula-07-planning/) — Faça seu agente decompor problemas complexos em etapas antes de agir.
+[Aula 07: Planning](../aula-07-planning/README.md) — Faça seu agente decompor problemas complexos em etapas antes de agir.

@@ -14,7 +14,7 @@ Aprender a criar equipes de agentes especializados que colaboram para resolver p
 
 ## Pré-requisitos
 
-- [Aula 03: Tool Calling](../aula-03-tool-calling/) completada (conceito de tools)
+- [Aula 03: Tool Calling](../aula-03-tool-calling/README.md) completada (conceito de tools)
 - `.env` com GOOGLE_API_KEY configurada
 
 ## Teoria
@@ -234,4 +234,4 @@ O fluxo real é:
 
 ## Próxima Aula
 
-[Aula 09: Guardrails](../aula-09-guardrails/) — Aprenda a adicionar validações e proteções aos seus agentes para garantir segurança e qualidade nas respostas.
+[Aula 09: Guardrails](../aula-09-guardrails/README.md) — Aprenda a adicionar validações e proteções aos seus agentes para garantir segurança e qualidade nas respostas.

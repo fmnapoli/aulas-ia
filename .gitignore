@@ -30,3 +30,6 @@ Thumbs.db
 *.db
 tmp/
 lancedb/
+
+# MkDocs
+site/

@@ -133,4 +133,4 @@ Você acabou de criar seu primeiro agente de IA!
 
 ## Próxima Aula
 
-[Aula 02: Prompt Engineering](../aula-02-prompt-engineering/) — Aprenda a controlar o comportamento do agente com system prompts avançados e structured output usando Pydantic.
+[Aula 02: Prompt Engineering](../aula-02-prompt-engineering/README.md) — Aprenda a controlar o comportamento do agente com system prompts avançados e structured output usando Pydantic.

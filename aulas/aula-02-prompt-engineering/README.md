@@ -13,7 +13,7 @@ Aprender a controlar o comportamento de um agente usando system prompts avançad
 
 ## Pré-requisitos
 
-- [Aula 01](../aula-01-hello-agent/) completada
+- [Aula 01](../aula-01-hello-agent/README.md) completada
 - `.env` com GOOGLE_API_KEY configurada
 
 ## Teoria
@@ -145,4 +145,4 @@ Nota: 8.5/10
 
 ## Próxima Aula
 
-[Aula 03: Tool Calling](../aula-03-tool-calling/) — Conecte seu agente a ferramentas externas como busca web e calculadora.
+[Aula 03: Tool Calling](../aula-03-tool-calling/README.md) — Conecte seu agente a ferramentas externas como busca web e calculadora.

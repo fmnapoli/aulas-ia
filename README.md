@@ -27,7 +27,7 @@ Aprenda a construir agentes de IA do zero usando **Agno** e **Google Gemini** ‚Ä
 
 ```bash
 # 1. Clone o reposit√≥rio
-git clone https://github.com/<org>/aulas-ia.git
+git clone https://github.com/fmnapoli/aulas-ia.git
 cd aulas-ia
 
 # 2. Configure sua API key

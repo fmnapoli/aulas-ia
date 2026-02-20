@@ -14,7 +14,7 @@ Entender como agentes mantêm contexto entre interações usando memória de cur
 
 ## Pré-requisitos
 
-- [Aula 01: Olá, Agente!](../aula-01-hello-agent/) completada (conceito de Agent + Gemini)
+- [Aula 01: Olá, Agente!](../aula-01-hello-agent/README.md) completada (conceito de Agent + Gemini)
 - `.env` com GOOGLE_API_KEY configurada
 
 ## Teoria
@@ -186,4 +186,4 @@ agent = Agent(
 
 ## Próxima Aula
 
-[Aula 06: Knowledge + RAG](../aula-06-knowledge-rag/) — Conecte seu agente a uma base de conhecimento com vector database para responder perguntas sobre documentos.
+[Aula 06: Knowledge + RAG](../aula-06-knowledge-rag/README.md) — Conecte seu agente a uma base de conhecimento com vector database para responder perguntas sobre documentos.

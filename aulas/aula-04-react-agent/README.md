@@ -14,7 +14,7 @@ Adicionar raciocínio explícito ao agente usando o padrão ReAct (Reasoning + A
 
 ## Pré-requisitos
 
-- [Aula 03](../aula-03-tool-calling/) completada
+- [Aula 03](../aula-03-tool-calling/README.md) completada
 - `.env` com GOOGLE_API_KEY configurada
 
 ## Teoria
@@ -210,4 +210,4 @@ COM ReasoningTools (Think → Act → Observe)
 
 ## Próxima Aula
 
-[Aula 05: Memory](../aula-05-memory/) — Dê memória ao agente para que ele lembre de conversas anteriores.
+[Aula 05: Memory](../aula-05-memory/README.md) — Dê memória ao agente para que ele lembre de conversas anteriores.

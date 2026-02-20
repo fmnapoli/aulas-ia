@@ -14,7 +14,7 @@ Conectar um agente a ferramentas externas (busca web, calculadora, conversor) pa
 
 ## Pré-requisitos
 
-- [Aula 01: Olá, Agente!](../aula-01-hello-agent/) completada (conceito de Agent + Gemini)
+- [Aula 01: Olá, Agente!](../aula-01-hello-agent/README.md) completada (conceito de Agent + Gemini)
 - `.env` com GOOGLE_API_KEY configurada
 
 ## Teoria
@@ -227,4 +227,4 @@ INTERAÇÃO 3: Conversor de Temperatura
 
 ## Próxima Aula
 
-[Aula 04: Agente ReAct](../aula-04-react-agent/) — Adicione raciocínio explícito ao agente com o padrão Think-Act-Observe.
+[Aula 04: Agente ReAct](../aula-04-react-agent/README.md) — Adicione raciocínio explícito ao agente com o padrão Think-Act-Observe.

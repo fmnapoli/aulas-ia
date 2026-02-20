@@ -14,7 +14,7 @@
 ### 1. Clonar o repositório
 
 ```bash
-git clone https://github.com/<org>/aulas-ia.git
+git clone https://github.com/fmnapoli/aulas-ia.git
 cd aulas-ia
 ```
 

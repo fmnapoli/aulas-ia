@@ -15,7 +15,7 @@ Aprender a proteger agentes de IA contra inputs maliciosos, tópicos proibidos e
 
 ## Pré-requisitos
 
-- [Aula 01: Olá, Agente!](../aula-01-hello-agent/) completada (conceito de Agent + Gemini)
+- [Aula 01: Olá, Agente!](../aula-01-hello-agent/README.md) completada (conceito de Agent + Gemini)
 - `.env` com GOOGLE_API_KEY configurada
 
 ## Teoria
@@ -184,4 +184,4 @@ O Teste 1 passa por ambos os guardrails e é processado normalmente. Os Testes 2
 
 ## Próxima Aula
 
-[Aula 10: Projeto Final](../aula-10-projeto-final/) — Combine tudo que aprendeu em um Assistente de Pesquisa completo com Team, Tools e Guardrails.
+[Aula 10: Projeto Final](../aula-10-projeto-final/README.md) — Combine tudo que aprendeu em um Assistente de Pesquisa completo com Team, Tools e Guardrails.

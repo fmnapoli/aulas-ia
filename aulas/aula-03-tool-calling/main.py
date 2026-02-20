@@ -1,4 +1,12 @@
-"""Aula 03: Tool Calling — Agent with external tools (search, calculator, converter)."""
+"""Aula 03: Tool Calling — Agente com ferramentas externas.
+
+Demonstra como conectar um agente a ferramentas externas:
+- DuckDuckGoTools: busca na web em tempo real
+- calculate: calculadora customizada (decorator @tool)
+- convert_temperature: conversor de temperatura customizado
+
+O LLM decide automaticamente qual ferramenta usar com base na pergunta.
+"""
 
 from agno.agent import Agent
 from agno.models.google import Gemini
@@ -6,8 +14,10 @@ from agno.tools.duckduckgo import DuckDuckGoTools
 from dotenv import load_dotenv
 from tools import calculate, convert_temperature
 
-load_dotenv()
+# Carrega variáveis de ambiente do arquivo .env (GOOGLE_API_KEY)
+load_dotenv(override=True)
 
+# Cria agente com 3 ferramentas: busca web + calculadora + conversor
 agent = Agent(
     model=Gemini(id="gemini-2.5-flash"),
     tools=[DuckDuckGoTools(), calculate, convert_temperature],
@@ -18,12 +28,11 @@ agent = Agent(
         "Use o conversor de temperatura quando pedirem conversões.",
         "Sempre responda em português.",
     ],
-    show_tool_calls=True,
     markdown=True,
 )
 
 
-# --- Interaction 1: Web search ---
+# --- Interação 1: Busca na web ---
 print("=" * 60)
 print("INTERAÇÃO 1: Busca na Web")
 print("=" * 60)
@@ -32,7 +41,7 @@ agent.print_response(
     stream=True,
 )
 
-# --- Interaction 2: Calculator ---
+# --- Interação 2: Calculadora ---
 print("\n" + "=" * 60)
 print("INTERAÇÃO 2: Calculadora")
 print("=" * 60)
@@ -41,7 +50,7 @@ agent.print_response(
     stream=True,
 )
 
-# --- Interaction 3: Temperature conversion ---
+# --- Interação 3: Conversor de temperatura ---
 print("\n" + "=" * 60)
 print("INTERAÇÃO 3: Conversor de Temperatura")
 print("=" * 60)

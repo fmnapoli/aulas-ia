@@ -1,27 +1,41 @@
+"""Aula 10: Projeto Final — Assistente de Pesquisa com Team multi-agente.
+
+Combina todos os conceitos do curso em um sistema completo:
+- Team com TeamMode.coordinate para orquestração
+- Researcher: busca fontes na web (Tool Calling)
+- Analyst: analisa e cruza referências
+- Writer: produz relatório estruturado em português
+
+Pipeline: Tema → Researcher (busca) → Analyst (análise) → Writer (relatório) → Resultado
+"""
+
 from dotenv import load_dotenv
+
 from agno.models.google import Gemini
 from agno.team import Team
 from agno.team.mode import TeamMode
+from agents import analyst, researcher, writer
 
-from agents import researcher, analyst, writer
+# Carrega variáveis de ambiente do arquivo .env (GOOGLE_API_KEY)
+load_dotenv(override=True)
 
-load_dotenv()
-
+# Cria o Team de pesquisa com 3 agentes especializados
 research_team = Team(
     name="Research Assistant",
     model=Gemini(id="gemini-2.5-flash"),
     members=[researcher, analyst, writer],
-    mode=TeamMode.coordinate,
+    mode=TeamMode.coordinate,  # Líder coordena a delegação de tarefas
     instructions=[
-        "You lead a research team that produces structured reports.",
-        "1. First, delegate to Researcher to find sources on the topic.",
-        "2. Then, delegate to Analyst to analyze and cross-reference findings.",
-        "3. Finally, delegate to Writer to produce a structured report in Portuguese.",
-        "Ensure the final output is a complete, well-structured research report.",
+        "Você lidera uma equipe de pesquisa que produz relatórios estruturados.",
+        "1. Primeiro, delegue ao Researcher para buscar fontes sobre o tema.",
+        "2. Depois, delegue ao Analyst para analisar e cruzar referências.",
+        "3. Por fim, delegue ao Writer para produzir um relatório em português.",
+        "Garanta que o resultado final seja um relatório completo e bem estruturado.",
     ],
     markdown=True,
 )
 
+# Executa a pesquisa completa
 print("=== Assistente de Pesquisa ===\n")
 print("Tema: O estado atual dos agentes de IA em 2026\n")
 

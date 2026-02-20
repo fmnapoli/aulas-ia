@@ -1,18 +1,23 @@
-"""Custom tools for the agent: calculator and unit converter."""
+"""Ferramentas customizadas para o agente: calculadora e conversor de temperatura.
+
+Demonstra como criar tools usando o decorator @tool do Agno.
+As docstrings são usadas pelo LLM para entender quando usar cada ferramenta.
+"""
 
 from agno.tools import tool
 
 
 @tool
 def calculate(expression: str) -> str:
-    """Evaluate a math expression and return the result.
+    """Avalia uma expressão matemática e retorna o resultado.
 
     Args:
-        expression: A mathematical expression to evaluate. Example: '2 + 3 * 4'
+        expression: Expressão matemática a ser avaliada. Exemplo: '2 + 3 * 4'
 
     Returns:
-        The result of the calculation or an error message.
+        O resultado do cálculo ou uma mensagem de erro.
     """
+    # Funções permitidas para segurança (evita execução de código arbitrário)
     allowed_names = {
         "abs": abs,
         "round": round,
@@ -24,36 +29,38 @@ def calculate(expression: str) -> str:
     }
     try:
         result = eval(expression, {"__builtins__": {}}, allowed_names)
-        return f"Result of '{expression}' = {result}"
+        return f"Resultado de '{expression}' = {result}"
     except ZeroDivisionError:
-        return "Error: division by zero"
+        return "Erro: divisão por zero"
     except Exception as e:
-        return f"Error evaluating '{expression}': {e}"
+        return f"Erro ao avaliar '{expression}': {e}"
 
 
 @tool
 def convert_temperature(value: float, from_unit: str, to_unit: str) -> str:
-    """Convert temperature between Celsius (C), Fahrenheit (F), and Kelvin (K).
+    """Converte temperatura entre Celsius (C), Fahrenheit (F) e Kelvin (K).
 
     Args:
-        value: The temperature value to convert.
-        from_unit: Source unit — one of 'C', 'F', or 'K'.
-        to_unit: Target unit — one of 'C', 'F', or 'K'.
+        value: Valor da temperatura a ser convertido.
+        from_unit: Unidade de origem — 'C', 'F' ou 'K'.
+        to_unit: Unidade de destino — 'C', 'F' ou 'K'.
 
     Returns:
-        The converted temperature as a formatted string.
+        A temperatura convertida em formato legível.
     """
     from_unit = from_unit.upper().strip()
     to_unit = to_unit.upper().strip()
 
     valid_units = {"C", "F", "K"}
     if from_unit not in valid_units or to_unit not in valid_units:
-        return f"Error: units must be one of {valid_units}. Got from='{from_unit}', to='{to_unit}'."
+        return (
+            f"Erro: unidades devem ser {valid_units}. Recebido: de='{from_unit}', para='{to_unit}'."
+        )
 
     if from_unit == to_unit:
-        return f"{value}°{to_unit} (same unit, no conversion needed)"
+        return f"{value}°{to_unit} (mesma unidade, conversão desnecessária)"
 
-    # Convert to Celsius first (intermediate step)
+    # Converte para Celsius primeiro (passo intermediário)
     if from_unit == "C":
         celsius = value
     elif from_unit == "F":
@@ -61,7 +68,7 @@ def convert_temperature(value: float, from_unit: str, to_unit: str) -> str:
     else:  # K
         celsius = value - 273.15
 
-    # Convert from Celsius to target
+    # Converte de Celsius para a unidade destino
     if to_unit == "C":
         result = celsius
     elif to_unit == "F":

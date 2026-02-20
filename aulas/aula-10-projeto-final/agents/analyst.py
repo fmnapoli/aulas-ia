@@ -1,14 +1,20 @@
+"""Agente Analista — analisa e cruza referências das fontes pesquisadas.
+
+Responsável por identificar temas comuns, contradições e insights-chave
+a partir dos dados coletados pelo Pesquisador.
+"""
+
 from agno.agent import Agent
 from agno.models.google import Gemini
 
 analyst = Agent(
     name="Analyst",
-    role="Analyze and cross-reference research findings",
+    role="Analisar e cruzar referências dos achados da pesquisa",
     model=Gemini(id="gemini-2.5-flash"),
     instructions=[
-        "Analyze the research findings provided.",
-        "Identify common themes, contradictions, and key insights.",
-        "Cross-reference information from multiple sources.",
-        "Highlight the most important and reliable findings.",
+        "Analise os achados da pesquisa fornecidos.",
+        "Identifique temas comuns, contradições e insights-chave.",
+        "Cruze informações de múltiplas fontes.",
+        "Destaque os achados mais importantes e confiáveis.",
     ],
 )

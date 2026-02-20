@@ -1,4 +1,9 @@
-"""Aula 02: Prompt Engineering — System prompts, few-shot e structured output."""
+"""Aula 02: Prompt Engineering — System prompts, few-shot e structured output.
+
+Demonstra duas técnicas fundamentais de prompt engineering:
+1. System prompt detalhado (instructions) para controlar estilo e formato da resposta
+2. Structured output com Pydantic para forçar respostas tipadas e validadas
+"""
 
 from dotenv import load_dotenv
 from pydantic import BaseModel, Field
@@ -6,10 +11,11 @@ from pydantic import BaseModel, Field
 from agno.agent import Agent
 from agno.models.google import Gemini
 
-load_dotenv()
+# Carrega variáveis de ambiente do arquivo .env (GOOGLE_API_KEY)
+load_dotenv(override=True)
 
 
-# --- Part 1: System prompt with detailed instructions ---
+# --- Parte 1: System prompt com instruções detalhadas ---
 
 analyst = Agent(
     model=Gemini(id="gemini-2.5-flash"),
@@ -28,28 +34,29 @@ analyst.print_response(
 )
 
 
-# --- Part 2: Structured output with Pydantic ---
+# --- Parte 2: Structured output com Pydantic ---
 
 
 class TechAnalysis(BaseModel):
-    """Structured analysis of a technology."""
+    """Análise estruturada de uma tecnologia."""
 
-    technology: str = Field(description="Name of the technology analyzed")
-    summary: str = Field(description="Brief summary in 1-2 sentences")
-    pros: list[str] = Field(description="List of 3 advantages")
-    cons: list[str] = Field(description="List of 3 disadvantages")
-    score: float = Field(ge=0, le=10, description="Score from 0 to 10")
+    technology: str = Field(description="Nome da tecnologia analisada")
+    summary: str = Field(description="Resumo breve em 1-2 frases")
+    pros: list[str] = Field(description="Lista de 3 vantagens")
+    cons: list[str] = Field(description="Lista de 3 desvantagens")
+    score: float = Field(ge=0, le=10, description="Nota de 0 a 10")
 
 
 structured_agent = Agent(
     model=Gemini(id="gemini-2.5-flash"),
-    instructions="Analyze the given technology objectively. Respond in Portuguese.",
+    instructions="Analise a tecnologia dada de forma objetiva. Responda em português.",
     output_schema=TechAnalysis,
 )
 
 print("\n\n=== Parte 2: Structured Output (Pydantic) ===\n")
 response = structured_agent.run("Analise o framework Agno para agentes de IA.")
 
+# Exibe os campos da resposta estruturada
 if isinstance(response.content, TechAnalysis):
     analysis = response.content
     print(f"Tecnologia: {analysis.technology}")

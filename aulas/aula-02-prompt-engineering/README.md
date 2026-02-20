@@ -62,6 +62,8 @@ O Agno converte o schema Pydantic em instruções para o LLM, forçando-o a reto
 - **Integração** — fácil de usar em pipelines, APIs, dashboards
 - **Type safety** — IDE com autocomplete nos campos
 
+> Diagrama completo disponível em [assets/diagram.md](assets/diagram.md).
+
 ## Prática
 
 ### Passo 1: Setup

@@ -83,6 +83,8 @@ A melhor estratégia é combinar múltiplas camadas de proteção:
 
 Guardrails ajudam a detectar e bloquear esses padrões antes que cheguem ao LLM.
 
+> Diagrama completo disponível em [assets/diagram.md](assets/diagram.md).
+
 ## Prática
 
 ### Passo 1: Setup
@@ -92,7 +94,7 @@ cd aulas/aula-09-guardrails
 uv sync
 ```
 
-### Passo 2: Guardrails customizados
+### Passo 2: Código
 
 O arquivo `guardrails.py` implementa dois guardrails:
 
@@ -128,8 +130,6 @@ class MaxLengthGuardrail(BaseGuardrail):
                 )
 ```
 
-### Passo 3: Agente com guardrails
-
 O `main.py` cria um agente com ambos os guardrails como `pre_hooks`:
 
 ```python
@@ -145,7 +145,7 @@ agent = Agent(
 
 Os guardrails são executados em ordem. Se qualquer um falhar, o input é bloqueado antes de chegar ao LLM.
 
-### Passo 4: Executar
+### Passo 3: Executar
 
 ```bash
 uv run python main.py

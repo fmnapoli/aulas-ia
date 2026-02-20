@@ -108,6 +108,8 @@ flowchart LR
 
 O agente com ReasoningTools faz mais passos, mas a resposta final tende a ser mais completa, precisa e bem fundamentada.
 
+> Diagrama completo disponível em [assets/diagram.md](assets/diagram.md).
+
 ## Prática
 
 ### Passo 1: Setup
@@ -117,7 +119,7 @@ cd aulas/aula-04-react-agent
 uv sync
 ```
 
-### Passo 2: Entender o código
+### Passo 2: Código
 
 Abra `main.py`. Temos dois agentes para comparação:
 

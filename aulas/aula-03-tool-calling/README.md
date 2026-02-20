@@ -127,6 +127,8 @@ O Agno vem com dezenas de toolkits prontos:
 
 Nesta aula usamos `DuckDuckGoTools` junto com nossas tools customizadas.
 
+> Diagrama completo disponível em [assets/diagram.md](assets/diagram.md).
+
 ## Prática
 
 ### Passo 1: Setup
@@ -136,7 +138,7 @@ cd aulas/aula-03-tool-calling
 uv sync
 ```
 
-### Passo 2: Entender as tools customizadas
+### Passo 2: Código
 
 Abra `tools.py` e analise as duas ferramentas:
 
@@ -160,8 +162,6 @@ def convert_temperature(value: float, from_unit: str, to_unit: str) -> str:
     # Converte para Celsius como passo intermediário, depois para a unidade destino
 ```
 
-### Passo 3: Entender o agente
-
 Abra `main.py` — o agente é configurado com 3 tipos de ferramentas:
 
 ```python
@@ -178,7 +178,7 @@ O script faz 3 interações demonstrando cada ferramenta:
 2. **Calculadora** — expressões matemáticas
 3. **Conversor** — conversão de temperatura
 
-### Passo 4: Executar
+### Passo 3: Executar
 
 ```bash
 uv run python main.py

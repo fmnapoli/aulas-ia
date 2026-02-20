@@ -90,10 +90,6 @@ A combinação de raciocínio com ferramentas é poderosa. O agente pode:
 
 Isso é muito mais confiável do que um agente que simplesmente gera texto a partir do que "memorizou" durante o treinamento.
 
-## Diagrama
-
-Veja o diagrama completo do fluxo em [assets/diagram.md](assets/diagram.md).
-
 ```mermaid
 flowchart TD
     A["Tarefa Complexa"] --> B["Planejamento (reasoning)"]
@@ -105,6 +101,8 @@ flowchart TD
     C3 --> D
     D --> E["Resultado Final"]
 ```
+
+> Diagrama completo disponível em [assets/diagram.md](assets/diagram.md).
 
 ## Prática
 
@@ -186,8 +184,6 @@ Vou decompor esta tarefa em subtarefas:
 ```
 
 Observe como o agente primeiro planeja, depois pesquisa cada framework, e finalmente sintetiza tudo.
-
-### Passo 4: Entender o Raciocínio
 
 Com `show_full_reasoning=True`, você verá o "pensamento" do agente antes da resposta. Isso é valioso para:
 

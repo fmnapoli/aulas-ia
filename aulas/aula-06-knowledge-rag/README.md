@@ -102,8 +102,6 @@ cd aulas/aula-06-knowledge-rag
 uv sync
 ```
 
-### Passo 2: Documentos
-
 O diretório `docs/` contém dois arquivos de exemplo:
 
 - `docs/python-guide.md` — guia de boas práticas Python
@@ -111,7 +109,7 @@ O diretório `docs/` contém dois arquivos de exemplo:
 
 Esses arquivos servem como base de conhecimento do agente.
 
-### Passo 3: Código
+### Passo 2: Código
 
 O `main.py` tem duas fases:
 
@@ -141,7 +139,7 @@ agent = Agent(
 agent.print_response("Quais são as melhores práticas de Python?", stream=True)
 ```
 
-### Passo 4: Executar
+### Passo 3: Executar
 
 ```bash
 uv run python main.py

@@ -65,6 +65,8 @@ No modo `coordinate`, o Team Leader:
 
 O líder usa o LLM para tomar decisões inteligentes sobre como delegar, mas segue as `instructions` definidas no Team.
 
+> Diagrama completo disponível em [assets/diagram.md](assets/diagram.md).
+
 ## Prática
 
 ### Passo 1: Setup
@@ -74,7 +76,7 @@ cd aulas/aula-10-projeto-final
 uv sync
 ```
 
-### Passo 2: Agentes especializados
+### Passo 2: Código
 
 O projeto tem 3 agentes em `agents/`:
 
@@ -123,8 +125,6 @@ writer = Agent(
 )
 ```
 
-### Passo 3: Orquestração com Team
-
 O `main.py` cria o Team que coordena os três agentes:
 
 ```python
@@ -145,7 +145,7 @@ research_team = Team(
 
 As `instructions` do Team definem a sequência de delegação. O líder segue esse pipeline: Researcher → Analyst → Writer.
 
-### Passo 4: Executar
+### Passo 3: Executar
 
 ```bash
 uv run python main.py

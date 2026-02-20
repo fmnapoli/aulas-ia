@@ -53,6 +53,8 @@ Agno é um framework Python open-source para agentes de IA. Vantagens:
 - Recursos nativos: tools, memory, knowledge, teams, guardrails
 - Performance superior (529x mais rápido que LangGraph na instanciação)
 
+> Diagrama completo disponível em [assets/diagram.md](assets/diagram.md).
+
 ## Prática
 
 ### Passo 1: Setup

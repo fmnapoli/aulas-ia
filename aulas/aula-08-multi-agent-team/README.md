@@ -91,10 +91,6 @@ researcher = Agent(
 )
 ```
 
-## Diagrama
-
-Veja os diagramas completos em [assets/diagram.md](assets/diagram.md).
-
 ```mermaid
 flowchart TD
     U["Usuário"] --> TL["Team Leader"]
@@ -104,6 +100,8 @@ flowchart TD
     W --> TL
     TL --> F["Resultado Final"]
 ```
+
+> Diagrama completo disponível em [assets/diagram.md](assets/diagram.md).
 
 ## Prática
 
@@ -207,8 +205,6 @@ Writing structured summary based on research...
 ```
 
 Observe como o coordenador primeiro aciona o Researcher, depois passa os dados ao Writer.
-
-### Passo 4: Entender a Dinâmica
 
 O fluxo real é:
 

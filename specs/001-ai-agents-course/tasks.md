@@ -54,7 +54,7 @@
 
 ### Aula 01: Olá, Agente!
 
-- [x] T016 [US1] Write main.py in aulas/aula-01-hello-agent/main.py — basic Agent with Gemini(id="gemini-2.0-flash"), dotenv for GOOGLE_API_KEY loading, print_response with stream=True, markdown=True (~30 lines)
+- [x] T016 [US1] Write main.py in aulas/aula-01-hello-agent/main.py — basic Agent with Gemini(id="gemini-2.5-flash"), dotenv for GOOGLE_API_KEY loading, print_response with stream=True, markdown=True (~30 lines)
 - [x] T017 [US1] Write README.md in aulas/aula-01-hello-agent/README.md following lesson contract template: objective (primeiro agente), concepts (Agent, Gemini, print_response), theory (o que é um LLM, o que é um agente, como funciona uma API), practice (step-by-step main.py walkthrough), troubleshooting (top 5 errors), challenge (mudar o prompt e observar diferenças)
 - [x] T018 [US1] Create concept diagram in aulas/aula-01-hello-agent/assets/diagram.md — text-based diagram (Mermaid or ASCII) showing: User → Agent → LLM API → Response flow
 
@@ -76,57 +76,57 @@
 
 ### Aula 03: Tool Calling
 
-- [ ] T022 [US2] Write tools.py in aulas/aula-03-tool-calling/tools.py — custom calculator tool using @tool decorator, demonstrating docstring as tool description, typed parameters (~20 lines)
-- [ ] T023 [US2] Write main.py in aulas/aula-03-tool-calling/main.py — Agent with tools=[DuckDuckGoTools(), calculator], demonstrate tool invocation with web search + calculation (~40 lines)
-- [ ] T024 [US2] Write README.md in aulas/aula-03-tool-calling/README.md — theory (function calling, tool descriptions, how LLMs select tools), concepts (tools, @tool, Toolkit, DuckDuckGoTools), practice, troubleshooting, challenge (criar um Toolkit customizado)
-- [ ] T025 [US2] Create concept diagram in aulas/aula-03-tool-calling/assets/diagram.md — User → Agent → Tool Selection → Tool Execution → Response
+- [x] T022 [US2] Write tools.py in aulas/aula-03-tool-calling/tools.py — custom calculator tool using @tool decorator, demonstrating docstring as tool description, typed parameters (~20 lines)
+- [x] T023 [US2] Write main.py in aulas/aula-03-tool-calling/main.py — Agent with tools=[DuckDuckGoTools(), calculator], demonstrate tool invocation with web search + calculation (~40 lines)
+- [x] T024 [US2] Write README.md in aulas/aula-03-tool-calling/README.md — theory (function calling, tool descriptions, how LLMs select tools), concepts (tools, @tool, Toolkit, DuckDuckGoTools), practice, troubleshooting, challenge (criar um Toolkit customizado)
+- [x] T025 [US2] Create concept diagram in aulas/aula-03-tool-calling/assets/diagram.md — User → Agent → Tool Selection → Tool Execution → Response
 
 ### Aula 04: Agente ReAct
 
-- [ ] T026 [P] [US2] Write main.py in aulas/aula-04-react-agent/main.py — Agent with ReasoningTools(add_instructions=True) + DuckDuckGoTools(), show_full_reasoning=True to visualize Think→Act→Observe loop (~40 lines)
-- [ ] T027 [P] [US2] Write README.md in aulas/aula-04-react-agent/README.md — theory (ReAct paper, Think→Act→Observe cycle, why reasoning improves tool use), concepts (ReasoningTools, reasoning, show_full_reasoning), practice, troubleshooting, challenge (comparar output com/sem ReasoningTools)
-- [ ] T028 [P] [US2] Create concept diagram in aulas/aula-04-react-agent/assets/diagram.md — ReAct loop: Think → Act → Observe → Think (repeat)
+- [x] T026 [P] [US2] Write main.py in aulas/aula-04-react-agent/main.py — Agent with ReasoningTools(add_instructions=True) + DuckDuckGoTools(), show_full_reasoning=True to visualize Think→Act→Observe loop (~40 lines)
+- [x] T027 [P] [US2] Write README.md in aulas/aula-04-react-agent/README.md — theory (ReAct paper, Think→Act→Observe cycle, why reasoning improves tool use), concepts (ReasoningTools, reasoning, show_full_reasoning), practice, troubleshooting, challenge (comparar output com/sem ReasoningTools)
+- [x] T028 [P] [US2] Create concept diagram in aulas/aula-04-react-agent/assets/diagram.md — ReAct loop: Think → Act → Observe → Think (repeat)
 
 ### Aula 05: Memory
 
-- [ ] T029 [P] [US2] Write main.py in aulas/aula-05-memory/main.py — Agent with SqliteDb(db_file="memory.db"), add_history_to_context=True, update_memory_on_run=True, demonstrate 3 sequential interactions with session_id showing memory persistence (~50 lines)
-- [ ] T030 [P] [US2] Write README.md in aulas/aula-05-memory/README.md — theory (short-term vs long-term memory, session persistence, fact extraction), concepts (SqliteDb, add_history_to_context, update_memory_on_run, session_id, user_id), practice, troubleshooting, challenge (usar learning=True para perfil automático)
-- [ ] T031 [P] [US2] Create concept diagram in aulas/aula-05-memory/assets/diagram.md — Agent ↔ SqliteDb: session history + extracted memories
+- [x] T029 [P] [US2] Write main.py in aulas/aula-05-memory/main.py — Agent with SqliteDb(db_file="memory.db"), add_history_to_context=True, update_memory_on_run=True, demonstrate 3 sequential interactions with session_id showing memory persistence (~50 lines)
+- [x] T030 [P] [US2] Write README.md in aulas/aula-05-memory/README.md — theory (short-term vs long-term memory, session persistence, fact extraction), concepts (SqliteDb, add_history_to_context, update_memory_on_run, session_id, user_id), practice, troubleshooting, challenge (usar learning=True para perfil automático)
+- [x] T031 [P] [US2] Create concept diagram in aulas/aula-05-memory/assets/diagram.md — Agent ↔ SqliteDb: session history + extracted memories
 
 ### Aula 06: Knowledge + RAG
 
-- [ ] T032 [P] [US2] Create sample documents in aulas/aula-06-knowledge-rag/docs/ — 2-3 small markdown files about a specific topic (ex: receitas brasileiras, guia de Python) for the agent to query
-- [ ] T033 [US2] Write main.py in aulas/aula-06-knowledge-rag/main.py — Knowledge with LanceDb(uri="tmp/lancedb", embedder=GeminiEmbedder()), insert docs from docs/ directory, Agent with knowledge=knowledge and search_knowledge=True, query the knowledge base (~60 lines)
-- [ ] T034 [US2] Write README.md in aulas/aula-06-knowledge-rag/README.md — theory (embeddings, vector databases, RAG pipeline, chunking), concepts (Knowledge, GeminiEmbedder, LanceDb, PDFReader, search_knowledge), practice, troubleshooting, challenge (adicionar um PDF próprio como knowledge)
-- [ ] T035 [US2] Create concept diagram in aulas/aula-06-knowledge-rag/assets/diagram.md — RAG pipeline: Documents → Embeddings → VectorDB → Query → Relevant Chunks → Agent → Response
+- [x] T032 [P] [US2] Create sample documents in aulas/aula-06-knowledge-rag/docs/ — 2-3 small markdown files about a specific topic (ex: receitas brasileiras, guia de Python) for the agent to query
+- [x] T033 [US2] Write main.py in aulas/aula-06-knowledge-rag/main.py — Knowledge with LanceDb(uri="tmp/lancedb", embedder=GeminiEmbedder()), insert docs from docs/ directory, Agent with knowledge=knowledge and search_knowledge=True, query the knowledge base (~60 lines)
+- [x] T034 [US2] Write README.md in aulas/aula-06-knowledge-rag/README.md — theory (embeddings, vector databases, RAG pipeline, chunking), concepts (Knowledge, GeminiEmbedder, LanceDb, PDFReader, search_knowledge), practice, troubleshooting, challenge (adicionar um PDF próprio como knowledge)
+- [x] T035 [US2] Create concept diagram in aulas/aula-06-knowledge-rag/assets/diagram.md — RAG pipeline: Documents → Embeddings → VectorDB → Query → Relevant Chunks → Agent → Response
 
 ### Aula 07: Planejamento e Decomposição
 
-- [ ] T036 [P] [US2] Write main.py in aulas/aula-07-planning/main.py — Agent with reasoning=True and tools=[DuckDuckGoTools()], demonstrate multi-step task decomposition (ex: "Pesquise 3 frameworks de agentes e compare") showing planning before execution (~50 lines)
-- [ ] T037 [P] [US2] Write README.md in aulas/aula-07-planning/README.md — theory (task decomposition, chain-of-thought, planning strategies), concepts (reasoning=True, multi-step tool chaining), practice, troubleshooting, challenge (tarefa complexa com 5+ subtarefas)
-- [ ] T038 [P] [US2] Create concept diagram in aulas/aula-07-planning/assets/diagram.md — Complex Task → Plan (subtasks) → Execute each → Synthesize results
+- [x] T036 [P] [US2] Write main.py in aulas/aula-07-planning/main.py — Agent with reasoning=True and tools=[DuckDuckGoTools()], demonstrate multi-step task decomposition (ex: "Pesquise 3 frameworks de agentes e compare") showing planning before execution (~50 lines)
+- [x] T037 [P] [US2] Write README.md in aulas/aula-07-planning/README.md — theory (task decomposition, chain-of-thought, planning strategies), concepts (reasoning=True, multi-step tool chaining), practice, troubleshooting, challenge (tarefa complexa com 5+ subtarefas)
+- [x] T038 [P] [US2] Create concept diagram in aulas/aula-07-planning/assets/diagram.md — Complex Task → Plan (subtasks) → Execute each → Synthesize results
 
 ### Aula 08: Team (Multi-Agent)
 
-- [ ] T039 [US2] Write main.py in aulas/aula-08-multi-agent-team/main.py — create 2-3 specialized Agents (news_agent with HackerNewsTools, finance_agent with YFinanceTools or DuckDuckGoTools), Team with TeamMode.coordinate, demonstrate delegation and synthesis (~60 lines)
-- [ ] T040 [US2] Write README.md in aulas/aula-08-multi-agent-team/README.md — theory (multi-agent architectures, coordinator pattern, delegation, team modes), concepts (Team, TeamMode, members, coordinate/route/broadcast), practice, troubleshooting, challenge (criar Team com TeamMode.route)
-- [ ] T041 [US2] Create concept diagram in aulas/aula-08-multi-agent-team/assets/diagram.md — Team Leader → delegates to Agent 1, Agent 2, Agent 3 → synthesizes results
+- [x] T039 [US2] Write main.py in aulas/aula-08-multi-agent-team/main.py — create 2-3 specialized Agents (news_agent with HackerNewsTools, finance_agent with YFinanceTools or DuckDuckGoTools), Team with TeamMode.coordinate, demonstrate delegation and synthesis (~60 lines)
+- [x] T040 [US2] Write README.md in aulas/aula-08-multi-agent-team/README.md — theory (multi-agent architectures, coordinator pattern, delegation, team modes), concepts (Team, TeamMode, members, coordinate/route/broadcast), practice, troubleshooting, challenge (criar Team com TeamMode.route)
+- [x] T041 [US2] Create concept diagram in aulas/aula-08-multi-agent-team/assets/diagram.md — Team Leader → delegates to Agent 1, Agent 2, Agent 3 → synthesizes results
 
 ### Aula 09: Guardrails e Segurança
 
-- [ ] T042 [P] [US2] Write guardrails.py in aulas/aula-09-guardrails/guardrails.py — custom guardrail extending BaseGuardrail that blocks specific topics or validates input length (~30 lines)
-- [ ] T043 [US2] Write main.py in aulas/aula-09-guardrails/main.py — Agent with pre_hooks=[PIIDetectionGuardrail(), CustomGuardrail()], demonstrate blocked input + allowed input, show error handling with InputCheckError (~50 lines)
-- [ ] T044 [US2] Write README.md in aulas/aula-09-guardrails/README.md — theory (AI safety, input validation, output filtering, PII protection, prompt injection), concepts (pre_hooks, PIIDetectionGuardrail, PromptInjectionGuardrail, BaseGuardrail, InputCheckError, CheckTrigger), practice, troubleshooting, challenge (criar guardrail de output)
-- [ ] T045 [US2] Create concept diagram in aulas/aula-09-guardrails/assets/diagram.md — Input → Pre-hooks (guardrails) → Agent → Post-hooks → Output
+- [x] T042 [P] [US2] Write guardrails.py in aulas/aula-09-guardrails/guardrails.py — custom guardrail extending BaseGuardrail that blocks specific topics or validates input length (~30 lines)
+- [x] T043 [US2] Write main.py in aulas/aula-09-guardrails/main.py — Agent with pre_hooks=[PIIDetectionGuardrail(), CustomGuardrail()], demonstrate blocked input + allowed input, show error handling with InputCheckError (~50 lines)
+- [x] T044 [US2] Write README.md in aulas/aula-09-guardrails/README.md — theory (AI safety, input validation, output filtering, PII protection, prompt injection), concepts (pre_hooks, PIIDetectionGuardrail, PromptInjectionGuardrail, BaseGuardrail, InputCheckError, CheckTrigger), practice, troubleshooting, challenge (criar guardrail de output)
+- [x] T045 [US2] Create concept diagram in aulas/aula-09-guardrails/assets/diagram.md — Input → Pre-hooks (guardrails) → Agent → Post-hooks → Output
 
 ### Aula 10: Projeto Final — Assistente de Pesquisa
 
-- [ ] T046 [US2] Write agents/researcher.py in aulas/aula-10-projeto-final/agents/researcher.py — Agent "Researcher" with DuckDuckGoTools(), role of searching web for sources on a given topic (~20 lines)
-- [ ] T047 [P] [US2] Write agents/analyst.py in aulas/aula-10-projeto-final/agents/analyst.py — Agent "Analyst" with Knowledge(LanceDb + GeminiEmbedder), role of analyzing and cross-referencing sources (~25 lines)
-- [ ] T048 [P] [US2] Write agents/writer.py in aulas/aula-10-projeto-final/agents/writer.py — Agent "Writer" with instructions to produce structured Markdown reports, output_schema for ReportSection (~20 lines)
-- [ ] T049 [US2] Write main.py in aulas/aula-10-projeto-final/main.py — Team(name="Research Assistant", model=Gemini(...), members=[researcher, analyst, writer], mode=TeamMode.coordinate), demonstrate end-to-end: user gives topic → Team researches, analyzes, writes report (~40 lines)
-- [ ] T050 [US2] Write README.md in aulas/aula-10-projeto-final/README.md — theory (putting it all together: Team + Knowledge + Tools + Guardrails), concepts review (all Agno concepts learned), practice (run the complete assistant), troubleshooting, challenge (adicionar 4o agente "Reviewer" ao Team)
-- [ ] T051 [US2] Create concept diagram in aulas/aula-10-projeto-final/assets/diagram.md — Full system: User → Team Leader → Researcher (web) + Analyst (knowledge) + Writer (report) → Structured Report
+- [x] T046 [US2] Write agents/researcher.py in aulas/aula-10-projeto-final/agents/researcher.py — Agent "Researcher" with DuckDuckGoTools(), role of searching web for sources on a given topic (~20 lines)
+- [x] T047 [P] [US2] Write agents/analyst.py in aulas/aula-10-projeto-final/agents/analyst.py — Agent "Analyst" with Knowledge(LanceDb + GeminiEmbedder), role of analyzing and cross-referencing sources (~25 lines)
+- [x] T048 [P] [US2] Write agents/writer.py in aulas/aula-10-projeto-final/agents/writer.py — Agent "Writer" with instructions to produce structured Markdown reports, output_schema for ReportSection (~20 lines)
+- [x] T049 [US2] Write main.py in aulas/aula-10-projeto-final/main.py — Team(name="Research Assistant", model=Gemini(...), members=[researcher, analyst, writer], mode=TeamMode.coordinate), demonstrate end-to-end: user gives topic → Team researches, analyzes, writes report (~40 lines)
+- [x] T050 [US2] Write README.md in aulas/aula-10-projeto-final/README.md — theory (putting it all together: Team + Knowledge + Tools + Guardrails), concepts review (all Agno concepts learned), practice (run the complete assistant), troubleshooting, challenge (adicionar 4o agente "Reviewer" ao Team)
+- [x] T051 [US2] Create concept diagram in aulas/aula-10-projeto-final/assets/diagram.md — Full system: User → Team Leader → Researcher (web) + Analyst (knowledge) + Writer (report) → Structured Report
 
 **Checkpoint**: Full course progression complete. Validate by running Aula 10 end-to-end — the Team should produce a structured research report.
 
@@ -138,9 +138,9 @@
 
 **Independent Test**: An instructor selects 3 lessons for a half-day workshop and verifies they work independently.
 
-- [ ] T052 [US3] Update root README.md to include module dependency matrix: table showing which lessons depend on which, and which can be taken independently
-- [ ] T053 [P] [US3] Add "Pré-requisitos" section to every README.md (aulas/aula-01 through aulas/aula-10) listing exact lesson dependencies from data-model.md dependency graph
-- [ ] T054 [P] [US3] Add "Próxima Aula" section to every README.md (aulas/aula-01 through aulas/aula-09) linking to the next lesson with a brief preview
+- [x] T052 [US3] Update root README.md to include module dependency matrix: table showing which lessons depend on which, and which can be taken independently
+- [x] T053 [P] [US3] Add "Pré-requisitos" section to every README.md (aulas/aula-01 through aulas/aula-10) listing exact lesson dependencies from data-model.md dependency graph
+- [x] T054 [P] [US3] Add "Próxima Aula" section to every README.md (aulas/aula-01 through aulas/aula-09) linking to the next lesson with a brief preview
 
 **Checkpoint**: An instructor can pick any subset of lessons and know exactly what's needed.
 
@@ -152,7 +152,7 @@
 
 - [ ] T055 Validate all 10 lessons execute successfully: run `uv sync && uv run python main.py` in each aulas/aula-XX directory
 - [ ] T056 [P] Review all README.md files for consistent formatting per lesson contract template in specs/001-ai-agents-course/contracts/lesson-contract.md
-- [ ] T057 [P] Verify all pyproject.toml files have correct dependencies by checking imports in each main.py
+- [x] T057 [P] Verify all pyproject.toml files have correct dependencies by checking imports in each main.py
 - [ ] T058 Run quickstart.md validation: follow specs/001-ai-agents-course/quickstart.md from scratch and verify complete flow works
 
 ---
@@ -263,7 +263,7 @@ With 3 developers after Phase 2:
 - [P] tasks = different files, no dependencies
 - [Story] label maps task to specific user story for traceability
 - All main.py files MUST load GOOGLE_API_KEY via dotenv
-- All main.py files MUST use Gemini(id="gemini-2.0-flash") as default model
+- All main.py files MUST use Gemini(id="gemini-2.5-flash") as default model
 - All README.md files MUST follow lesson contract template
 - Code in English, text in Portuguese
 - Diagrams use text-based format (Mermaid or ASCII) — no image generation needed

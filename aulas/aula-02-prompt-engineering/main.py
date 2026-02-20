@@ -12,7 +12,7 @@ load_dotenv()
 # --- Part 1: System prompt with detailed instructions ---
 
 analyst = Agent(
-    model=Gemini(id="gemini-2.0-flash"),
+    model=Gemini(id="gemini-2.5-flash"),
     instructions=[
         "Você é um analista de tecnologia especializado em IA.",
         "Sempre responda em português.",
@@ -42,7 +42,7 @@ class TechAnalysis(BaseModel):
 
 
 structured_agent = Agent(
-    model=Gemini(id="gemini-2.0-flash"),
+    model=Gemini(id="gemini-2.5-flash"),
     instructions="Analyze the given technology objectively. Respond in Portuguese.",
     output_schema=TechAnalysis,
 )

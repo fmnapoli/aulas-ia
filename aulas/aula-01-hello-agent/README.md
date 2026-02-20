@@ -82,7 +82,7 @@ from agno.models.google import Gemini
 load_dotenv()  # Carrega GOOGLE_API_KEY do arquivo .env
 
 agent = Agent(
-    model=Gemini(id="gemini-2.0-flash"),  # Modelo a usar
+    model=Gemini(id="gemini-2.5-flash"),  # Modelo a usar
     instructions="Você é um assistente simpático...",  # System prompt
     markdown=True,  # Formata resposta em Markdown
 )
@@ -93,7 +93,7 @@ agent.print_response("Olá!", stream=True)  # Envia mensagem e imprime
 **Pontos-chave:**
 
 1. `load_dotenv()` carrega a API key do arquivo `.env`
-2. `Gemini(id="gemini-2.0-flash")` seleciona o modelo (rápido e gratuito)
+2. `Gemini(id="gemini-2.5-flash")` seleciona o modelo (rápido e gratuito)
 3. `instructions` define a "personalidade" do agente
 4. `print_response()` envia a mensagem e imprime a resposta formatada
 5. `stream=True` mostra a resposta em tempo real
@@ -117,7 +117,7 @@ Você acabou de criar seu primeiro agente de IA!
 
 1. Mude o `instructions` para dar ao agente uma personalidade diferente (ex: pirata, professor, chef de cozinha)
 2. Faça o agente responder em inglês mudando as instruções
-3. Troque `gemini-2.0-flash` por `gemini-2.5-flash` e compare as respostas
+3. Troque `gemini-2.5-flash` por `gemini-2.5-pro` e compare as respostas
 
 ## Troubleshooting
 

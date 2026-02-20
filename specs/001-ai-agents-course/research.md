@@ -17,7 +17,7 @@
 
 ## R2: LLM Provider — Google Gemini via Google AI API
 
-**Decision**: Google Gemini (gemini-2.0-flash) direto via Google AI API com `GOOGLE_API_KEY`.
+**Decision**: Google Gemini (gemini-2.5-flash) direto via Google AI API com `GOOGLE_API_KEY`.
 
 **Rationale**: Free tier generoso sem cartão de crédito. Qualidade suficiente para todos os exercícios. Agno tem suporte nativo: `from agno.models.google import Gemini`.
 
@@ -30,7 +30,7 @@
 **Configuração Agno**:
 ```python
 from agno.models.google import Gemini
-model = Gemini(id="gemini-2.0-flash")
+model = Gemini(id="gemini-2.5-flash")
 ```
 
 ## R3: Embeddings para RAG (Aula 06) — GeminiEmbedder
@@ -102,7 +102,7 @@ Para a Aula 04, usar `ReasoningTools` é o mais didático porque torna o ciclo T
 ```python
 from agno.tools.reasoning import ReasoningTools
 agent = Agent(
-    model=Gemini(id="gemini-2.0-flash"),
+    model=Gemini(id="gemini-2.5-flash"),
     tools=[ReasoningTools(add_instructions=True)],
     show_full_reasoning=True,
 )
@@ -128,7 +128,7 @@ from agno.team.mode import TeamMode
 
 team = Team(
     name="Research Team",
-    model=Gemini(id="gemini-2.0-flash"),
+    model=Gemini(id="gemini-2.5-flash"),
     members=[agent1, agent2, agent3],
     mode=TeamMode.coordinate,
     instructions="Coordinate research and synthesize findings.",
@@ -210,7 +210,7 @@ class Analysis(BaseModel):
     confidence: float = Field(ge=0, le=1)
 
 agent = Agent(
-    model=Gemini(id="gemini-2.0-flash"),
+    model=Gemini(id="gemini-2.5-flash"),
     output_schema=Analysis,
 )
 response = agent.run("Analyze the impact of AI on education")

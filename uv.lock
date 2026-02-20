@@ -233,6 +233,7 @@ source = { virtual = "aulas/aula-02-prompt-engineering" }
 dependencies = [
     { name = "agno" },
     { name = "google-genai" },
+    { name = "pydantic" },
     { name = "python-dotenv" },
 ]
 
@@ -240,6 +241,7 @@ dependencies = [
 requires-dist = [
     { name = "agno" },
     { name = "google-genai" },
+    { name = "pydantic" },
     { name = "python-dotenv" },
 ]
 
@@ -384,10 +386,7 @@ dependencies = [
     { name = "agno" },
     { name = "ddgs" },
     { name = "google-genai" },
-    { name = "lancedb" },
     { name = "python-dotenv" },
-    { name = "sqlalchemy" },
-    { name = "tantivy" },
 ]
 
 [package.metadata]
@@ -395,10 +394,7 @@ requires-dist = [
     { name = "agno" },
     { name = "ddgs" },
     { name = "google-genai" },
-    { name = "lancedb" },
     { name = "python-dotenv" },
-    { name = "sqlalchemy" },
-    { name = "tantivy" },
 ]
 
 [[package]]

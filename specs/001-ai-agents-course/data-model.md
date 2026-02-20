@@ -63,7 +63,7 @@ Mapeamento entre aula e os constructs Agno utilizados.
 
 ### Aula 01 — Agent básico
 ```python
-Agent(model=Gemini(id="gemini-2.0-flash"), markdown=True)
+Agent(model=Gemini(id="gemini-2.5-flash"), markdown=True)
 ```
 
 ### Aula 02 — Structured Output

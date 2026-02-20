@@ -57,7 +57,24 @@ aulas-ia/
     └── aula-10-projeto-final/
 ```
 
-Cada aula é **auto-contida** — pode ser executada independentemente.
+Cada aula é **auto-contida** — pode ser executada independentemente (respeitando as dependências abaixo).
+
+## Dependências entre Aulas
+
+| Aula | Depende de | Pode ser feita isoladamente? |
+|------|-----------|-------------------------------|
+| 01 — Olá, Agente! | — | Sim |
+| 02 — Prompt Engineering | 01 | Sim (com conhecimento básico de Agent) |
+| 03 — Tool Calling | 01 | Sim (com conhecimento básico de Agent) |
+| 04 — Agente ReAct | 03 | Precisa entender tool calling |
+| 05 — Memory | 01 | Sim (com conhecimento básico de Agent) |
+| 06 — Knowledge + RAG | 01 | Sim (com conhecimento básico de Agent) |
+| 07 — Planejamento | 03, 04 | Precisa entender tools + ReAct |
+| 08 — Multi-Agent Team | 03 | Precisa entender tool calling |
+| 09 — Guardrails | 01 | Sim (com conhecimento básico de Agent) |
+| 10 — Projeto Final | Todas | Capstone — usa todos os conceitos |
+
+> **Para instrutores**: As aulas 02, 03, 05, 06 e 09 dependem apenas da Aula 01, permitindo montar workshops com subconjuntos do curso.
 
 ## Formato de Cada Aula
 

@@ -8,7 +8,7 @@ from agno.models.google import Gemini
 load_dotenv()
 
 agent = Agent(
-    model=Gemini(id="gemini-2.0-flash"),
+    model=Gemini(id="gemini-2.5-flash"),
     instructions="Você é um assistente simpático e prestativo. Responda em português.",
     markdown=True,
 )

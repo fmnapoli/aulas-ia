@@ -88,7 +88,7 @@ from agno.models.google import Gemini
 # ... setup ...
 
 agent = Agent(
-    model=Gemini(id="gemini-2.0-flash"),
+    model=Gemini(id="gemini-2.5-flash"),
     # ... configuração específica da aula ...
 )
 

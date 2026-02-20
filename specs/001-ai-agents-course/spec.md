@@ -10,7 +10,7 @@
 ### Session 2026-02-19
 
 - Q: Qual framework principal para os exemplos do curso? → A: Agno (https://agno.com) — framework open-source Python para agentes com suporte nativo a memory, knowledge, tools, guardrails, teams, workflows e multi-agent systems.
-- Q: Qual provedor de LLM padrão nos exemplos? → A: Google Gemini (gemini-2.0-flash) diretamente via Google AI API. Free tier generoso, sem cartão de crédito para começar.
+- Q: Qual provedor de LLM padrão nos exemplos? → A: Google Gemini (gemini-2.5-flash) diretamente via Google AI API. Free tier generoso, sem cartão de crédito para começar.
 - Q: O que fica explicitamente fora de escopo? → A: Deploy em produção, fine-tuning de modelos, modelos locais (Ollama), frontend/UI, MLOps.
 - Q: Qual o tema do projeto final (Aula 10)? → A: Assistente de pesquisa — Team de agentes que busca na web, analisa fontes e gera relatório estruturado.
 - Q: Idioma do conteúdo escrito das aulas? → A: Português para texto (READMEs, teoria, explicações), inglês para código (variáveis, funções, comentários inline).
@@ -87,7 +87,7 @@ Um instrutor ou líder técnico quer usar o material do curso em treinamentos in
 - **FR-003**: O curso DEVE seguir uma progressão de complexidade: fundamentos → agentes simples → tools → memória → orquestração → multi-agente → projeto final
 - **FR-004**: Cada aula DEVE incluir: objetivo claro, conceito teórico breve, exemplo prático completo com código, exercício desafio opcional, e troubleshooting dos erros comuns
 - **FR-005**: O curso DEVE usar Agno (https://agno.com) como framework principal para todos os exemplos de agentes, aproveitando seus recursos nativos: Agent, Team, Workflow, Memory, Knowledge, Tools e Guardrails
-- **FR-006**: Todos os exemplos DEVEM usar Google Gemini (gemini-2.0-flash) como modelo padrão via Google AI API, aproveitando o free tier generoso (sem cartão de crédito). Custo total < $5 para completar o curso
+- **FR-006**: Todos os exemplos DEVEM usar Google Gemini (gemini-2.5-flash) como modelo padrão via Google AI API, aproveitando o free tier generoso (sem cartão de crédito). Custo total < $5 para completar o curso
 - **FR-007**: O repositório DEVE conter o código completo de cada aula em diretórios separados, com README individual e requirements.txt/pyproject.toml
 - **FR-008**: O curso DEVE cobrir os padrões fundamentais de agentes de IA: ReAct, tool-calling, RAG, memória conversacional, planejamento, e orquestração multi-agente
 - **FR-009**: Cada aula DEVE incluir um diagrama ou ilustração que explique visualmente o conceito sendo ensinado

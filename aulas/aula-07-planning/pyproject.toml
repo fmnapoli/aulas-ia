@@ -1,0 +1,12 @@
+[project]
+name = "aula-07-planning"
+version = "0.1.0"
+description = "Aula 07: Planejamento — Agente que decompõe tarefas complexas"
+requires-python = ">=3.11"
+dependencies = [
+    "agno",
+    "google-genai",
+    "python-dotenv",
+    "ddgs",
+]
+

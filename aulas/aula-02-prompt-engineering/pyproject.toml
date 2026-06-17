@@ -1,0 +1,12 @@
+[project]
+name = "aula-02-prompt-engineering"
+version = "0.1.0"
+description = "Aula 02: Prompt Engineering — System prompts, few-shot, structured output"
+requires-python = ">=3.11"
+dependencies = [
+    "agno",
+    "google-genai",
+    "pydantic",
+    "python-dotenv",
+]
+

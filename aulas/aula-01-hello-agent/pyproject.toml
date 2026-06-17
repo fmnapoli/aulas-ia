@@ -1,0 +1,11 @@
+[project]
+name = "aula-01-hello-agent"
+version = "0.1.0"
+description = "Aula 01: Olá, Agente! — Primeiro agente conversacional com Agno"
+requires-python = ">=3.11"
+dependencies = [
+    "agno",
+    "google-genai",
+    "python-dotenv",
+]
+
